@@ -15,7 +15,7 @@ const LoginPage = () => {
       localStorage.setItem("isLoggedIn", "true");
 
       // Redirect to the dashboard or main page after successful login
-      navigate("/layout");
+      navigate("/layout/dashboard");
     } else {
       alert("Invalid credentials");
     }

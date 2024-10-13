@@ -10,6 +10,7 @@ import UsersList from "./pages/UsersList";
 import Allproductlist from "./pages/Allproductlist";
 import Createproduct from "./pages/Createproduct";
 import Categories from "./pages/categories";
+import Dashboard from "./pages/Dashboard"; 
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
             {/* Nest routes under layout */}
             <Route path="layout" element={<Layout />}>
                 {/* Relative path for nested route */}
+                <Route path="dashboard" element={<Dashboard />} /> {/* New Dashboard Route */}
                 <Route path="all-users" element={<UsersList />} />
                 <Route path="all-product-list" element={<Allproductlist />} />
                 <Route path="create-product" element={<Createproduct />} />
