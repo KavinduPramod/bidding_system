@@ -17,19 +17,19 @@ const SideBar = () => {
 
       <nav className="flex-1 space-y-4">
         <NavLink
-          to="/layout"
+          to="layout"
           className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
         >
           Dashboard
         </NavLink>
         <NavLink
-          to="/products"
+          to="/layout/all-product-list"
           className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
         >
-          My Products
+        Product List
         </NavLink>
         <NavLink
-          to="/create-product"
+          to="/layout/create-product"
           className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
         >
           Create Product
@@ -38,31 +38,13 @@ const SideBar = () => {
           to="/layout/all-users"
           className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
         >
-          All User
+          Users List
         </NavLink>
         <NavLink
-          to="/layout/all-product-list"
-          className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
-        >
-          All Product List
-        </NavLink>
-        <NavLink
-          to="/categories"
+          to="/layout/categories"
           className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
         >
           Categories
-        </NavLink>
-        <NavLink
-          to="/income"
-          className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
-        >
-          Income
-        </NavLink>
-        <NavLink
-          to="/winning-bids"
-          className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
-        >
-          Winning Bids
         </NavLink>
       </nav>
     </div>
