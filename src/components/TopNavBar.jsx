@@ -18,7 +18,7 @@ const TopNavBar = () => {
       </nav>
       <div className="flex items-center space-x-4">
         <input type="text" placeholder="Search" className="border rounded-md p-2" />
-        <img src="/path-to-avatar.jpg" alt="User Avatar" className="w-10 h-10 rounded-full" />
+        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="User Avatar" className="w-10 h-10 rounded-full" />
       </div>
     </div>
   );

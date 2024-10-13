@@ -5,11 +5,16 @@ const SideBar = () => {
   return (
     <div className="h-full w-1/5 p-6 bg-white shadow-lg flex flex-col">
       <div className="flex items-center gap-4 mb-8">
-        <img
-          src="/path-to-avatar.jpg"
-          alt="Admin"
-          className="w-12 h-12 rounded-full"
-        />
+      <img
+  src="https://randomuser.me/api/portraits/men/75.jpg" // Example URL
+  alt="Admin"
+  className="w-12 h-12 rounded-full"
+/>
+
+
+
+
+
         <div>
           <p className="font-bold">Admin</p>
           <p className="text-sm text-gray-500">admin@gmail.com</p>
