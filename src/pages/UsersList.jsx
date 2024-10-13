@@ -1,6 +1,12 @@
 import React from "react";
 import { FaEye, FaEdit, FaTrash } from 'react-icons/fa';
 
+/**
+ * Displays a list of users in a table format.
+ * Each row in the table represents a user, with columns for the user's ID, username, email, role, photo, date, and actions (preview, edit, delete).
+ * Handles previewing, editing, and deleting users when the respective buttons are clicked.
+ * @type {React.FC}
+ */
 const UsersList = () => {
   const users = [
     { id: 1, username: 'Admin', email: 'admin@gmail.com', role: 'Admin', date: '4 Aug 2024', photo: 'https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D' },

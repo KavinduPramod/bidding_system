@@ -1,5 +1,11 @@
 import React from 'react';
 
+/**
+ * @function Dashboard
+ * @description A page that displays some statistics about the current state of the application.
+ * @returns {JSX.Element} A JSX element representing the Dashboard page.
+ */
+
 function Dashboard() {
   // Example data, you can replace these with actual data from your API or state management
   const stats = {

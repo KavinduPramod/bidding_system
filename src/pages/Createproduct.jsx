@@ -1,5 +1,13 @@
 import React, { useState } from 'react';
 
+
+/**
+ * A form component for creating a product.
+ * Handles form submission by preventing default form behavior and
+ * logging the form fields to the console.
+ *
+ * @returns {JSX.Element} A JSX element representing the CreateProduct component.
+ */
 function CreateProduct() {
   const [productName, setProductName] = useState('');
   const [productPrice, setProductPrice] = useState('');
@@ -8,6 +16,12 @@ function CreateProduct() {
   const [category, setCategory] = useState('');
   const [auctionEndDate, setAuctionEndDate] = useState('');
 
+
+  /**
+   * Handles form submission by preventing default form behavior and
+   * logging the form fields to the console.
+   * @param {Event} e The form submission event.
+   */
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({

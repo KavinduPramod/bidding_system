@@ -1,6 +1,12 @@
 import React from 'react';
 import { FaEye, FaEdit, FaTrash } from 'react-icons/fa';
 
+
+/**
+ * Displays a list of products in a table format.
+ * Each row in the table represents a product, with columns for the product's ID, title, price, bid amount, image, and actions (preview, edit, delete).
+ * Handles previewing, editing, and deleting products when the respective buttons are clicked.
+ */
 function Allproductlist() {
   const products = [
     { id: 1, title: 'Camera', price: '$10', bidAmount: '$12', image: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-madebymath-90946.jpg&fm=jpg' },
@@ -9,7 +15,6 @@ function Allproductlist() {
     { id: 4, title: 'washing bottle', price: '$25', bidAmount: '$30', image: 'https://cloudfront.omsphotopg.com/wp-content/uploads/2020/03/14131027/OMS-Photo-PG-product-photography-nancy-armstrong-038.jpg' },
     // Add more products as needed
   ];
-
 
   /**
    * Handles previewing a category.

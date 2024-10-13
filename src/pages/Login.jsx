@@ -1,11 +1,30 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
+/**
+ * LoginPage component
+ *
+ * A login page for Bid Out, with a username and password input,
+ * and a submit button to log in.
+ *
+ * For demo purposes, the login credentials are hardcoded to
+ * "admin" and "123". You should replace this with a real
+ * authentication API.
+ *
+ * @returns {JSX.Element} The login form
+ */
 const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
+  /**
+   * Handles form submission by preventing default form behavior and
+   * logging in if the credentials are correct. For demo purposes, the
+   * credentials are hardcoded to "admin" and "123". You should replace
+   * this with a real authentication API.
+   * @param {Event} e The form submission event.
+   */
   const handleLogin = (e) => {
     e.preventDefault();
 
