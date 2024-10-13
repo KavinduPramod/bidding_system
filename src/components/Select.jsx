@@ -3,7 +3,6 @@ import { Combobox, Transition } from "@headlessui/react";
 
 const Select = () => {
     
-    
 };
 
 export default Select;
