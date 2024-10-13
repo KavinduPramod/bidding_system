@@ -13,7 +13,7 @@ const router = createBrowserRouter(
         <Route>
             <Route path="login" element={<Login />} />
             <Route path="/" element={<Layout />}>
-                <Route path="users" element={<UsersList />} />  // Add route for users list
+                <Route path="users" element={<UsersList />} />
                 {/* Add more routes here */}
             </Route>
         </Route>
