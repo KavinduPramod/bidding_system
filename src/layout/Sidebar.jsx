@@ -44,7 +44,7 @@ const SideBar = () => {
           to="/layout/categories"
           className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
         >
-          Categories
+          Category List
         </NavLink>
       </nav>
     </div>
