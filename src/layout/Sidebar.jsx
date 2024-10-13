@@ -1,3 +1,4 @@
+
 import { NavLink } from "react-router-dom";
 
 const SideBar = () => {
@@ -20,16 +21,25 @@ const SideBar = () => {
           Dashboard
         </NavLink>
         <NavLink to="/products" className="block text-gray-700 hover:text-green-500">
-          All Product List
+          My Products
         </NavLink>
         <NavLink to="/create-product" className="block text-gray-700 hover:text-green-500">
           Create Product
         </NavLink>
         <NavLink to="/users" className="block text-gray-700 hover:text-green-500">
-          All Users
+          All User
+        </NavLink>
+        <NavLink to="/products-list" className="block text-gray-700 hover:text-green-500">
+          All Product List
         </NavLink>
         <NavLink to="/categories" className="block text-gray-700 hover:text-green-500">
           Categories
+        </NavLink>
+        <NavLink to="/income" className="block text-gray-700 hover:text-green-500">
+          Income
+        </NavLink>
+        <NavLink to="/winning-bids" className="block text-gray-700 hover:text-green-500">
+          Winning Bids
         </NavLink>
       </nav>
     </div>
