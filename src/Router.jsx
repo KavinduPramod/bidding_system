@@ -14,8 +14,10 @@ const router = createBrowserRouter(
             {/* Redirect the root path to the login page */}
             <Route path="/" element={<Navigate to="/login" replace />} />
             <Route path="login" element={<Login />} />
-            <Route path="/layout" element={<Layout />}>
-                <Route path="users" element={<UsersList />} />
+            {/* Nest routes under layout */}
+            <Route path="layout" element={<Layout />}>
+                {/* Relative path for nested route */}
+                <Route path="all-users" element={<UsersList />} />
                 {/* Add more routes here */}
             </Route>
         </Route>

@@ -35,13 +35,13 @@ const SideBar = () => {
           Create Product
         </NavLink>
         <NavLink
-          to="/users"
+          to="/layout/all-users"
           className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
         >
           All User
         </NavLink>
         <NavLink
-          to="/products-list"
+          to="/"
           className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
         >
           All Product List
