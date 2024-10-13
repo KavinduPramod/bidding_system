@@ -37,7 +37,18 @@ const UsersList = () => {
               </td>
               <td className="border px-4 py-2">{user.date}</td>
               <td className="border px-4 py-2">
-                <button className="text-blue-500 hover:underline">View</button>
+              <button 
+      className="bg-blue-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-blue-600"
+      onClick={() => handleUpdate(user.id)} 
+    >
+      Update
+    </button>
+    <button 
+      className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
+      onClick={() => handleDelete(user.id)} 
+    >
+      Delete
+    </button>
               </td>
             </tr>
           ))}
