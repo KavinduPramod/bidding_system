@@ -46,6 +46,11 @@ const UsersList = () => {
               </td>
               <td className="border px-4 py-2">{user.date}</td>
               <td className="border px-4 py-2">
+              <button 
+                  className="bg-green-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-green-600"
+                >
+                  View
+                </button>
                 <button 
                   className="bg-blue-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-blue-600"
                   onClick={() => handleUpdate(user.id)} 
