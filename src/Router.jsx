@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import Layout from "./layout/Layout";
 import Login from "./pages/Login";
-import UsersList from "./pages/UsersList";  // New user list page
+import UsersList from "./pages/UsersList";
+import Allproductlist from "./pages/Allproductlist";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
             <Route path="layout" element={<Layout />}>
                 {/* Relative path for nested route */}
                 <Route path="all-users" element={<UsersList />} />
+                <Route path="all-product-list" element={<Allproductlist />} />
                 {/* Add more routes here */}
             </Route>
         </Route>

@@ -17,7 +17,7 @@ const SideBar = () => {
 
       <nav className="flex-1 space-y-4">
         <NavLink
-          to="/dashboard"
+          to="/layout"
           className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
         >
           Dashboard
@@ -41,7 +41,7 @@ const SideBar = () => {
           All User
         </NavLink>
         <NavLink
-          to="/"
+          to="/layout/all-product-list"
           className="block text-gray-700 bg-gray-200 hover:bg-green-100 hover:text-green-500 rounded-lg p-3"
         >
           All Product List
