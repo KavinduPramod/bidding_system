@@ -1,4 +1,5 @@
 import React from "react";
+import { FaEye, FaEdit, FaTrash } from 'react-icons/fa';
 
 const UsersList = () => {
   const users = [
@@ -9,19 +10,44 @@ const UsersList = () => {
     // Add more users with their respective photo URLs
   ];
 
-  const handleUpdate = (id) => {
-    // Update logic here
-    console.log(`Update user with id: ${id}`);
+  /**
+   * Handles previewing a category.
+   * @param {number} id The ID of the category to preview.
+   */
+  const handlePreview = (id) => {
+    // Preview logic here
+    console.log(`Preview category with id: ${id}`);
   };
 
+  /**
+   * Handles editing a category.
+   * @param {number} id The ID of the category to edit.
+   */
+  const handleUpdate = (id) => {
+    // Edit logic here
+    console.log(`Edit category with id: ${id}`);
+  };
+
+  /**
+   * Handles deleting a category.
+   * @param {number} id The ID of the category to delete.
+   */
   const handleDelete = (id) => {
     // Delete logic here
-    console.log(`Delete user with id: ${id}`);
+    console.log(`Delete category with id: ${id}`);
   };
 
   return (
-    <div className="p-6 bg-white rounded-lg shadow-lg">
+    <div className="relative p-6 bg-white rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-4">User Lists</h2>
+      <button
+        className="absolute top-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+        onClick={() => {
+          //you can call a function if needed
+        }}
+      >
+        Create User
+      </button>
       <table className="min-w-full table-auto">
         <thead className="bg-gray-200">
           <tr>
@@ -48,20 +74,21 @@ const UsersList = () => {
               <td className="border px-4 py-2">
               <button 
                   className="bg-green-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-green-600"
+                  onClick={() => handlePreview(user.id)}
                 >
-                  View
+                  <FaEye className="mr-1" />
                 </button>
                 <button 
                   className="bg-blue-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-blue-600"
                   onClick={() => handleUpdate(user.id)} 
                 >
-                  Update
+                  <FaEdit className="mr-1" />
                 </button>
                 <button 
                   className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
                   onClick={() => handleDelete(user.id)} 
                 >
-                  Delete
+                  <FaTrash className="mr-1" />
                 </button>
               </td>
             </tr>

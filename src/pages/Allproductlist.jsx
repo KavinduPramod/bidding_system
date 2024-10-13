@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaEye, FaEdit, FaTrash } from 'react-icons/fa';
 
 function Allproductlist() {
   const products = [
@@ -9,20 +10,47 @@ function Allproductlist() {
     // Add more products as needed
   ];
 
-  const handleUpdate = (id) => {
-    // Update logic here
-    console.log(`Update product with id: ${id}`);
+
+  /**
+   * Handles previewing a category.
+   * @param {number} id The ID of the category to preview.
+   */
+  const handlePreview = (id) => {
+    // Preview logic here
+    console.log(`Preview category with id: ${id}`);
   };
 
+  /**
+   * Handles editing a category.
+   * @param {number} id The ID of the category to edit.
+   */
+  const handleUpdate = (id) => {
+    // Edit logic here
+    console.log(`Edit category with id: ${id}`);
+  };
+
+  /**
+   * Handles deleting a category.
+   * @param {number} id The ID of the category to delete.
+   */
   const handleDelete = (id) => {
     // Delete logic here
-    console.log(`Delete product with id: ${id}`);
+    console.log(`Delete category with id: ${id}`);
   };
 
   return (
-    <div className="p-6 bg-white rounded-lg shadow-lg">
+    <div className="relative p-6 bg-white rounded-lg shadow-lg">
       <h2 className="text-2xl font-bold mb-4">Product List</h2>
-      <table className="min-w-full table-auto">
+      <button
+        className="absolute top-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+        onClick={() => {
+          //redirect to create product
+          window.location.href = '/layout/create-product';
+        }}
+      >
+        Create Product
+      </button>
+      <table className="min-w-full table-auto mt-8">
         <thead className="bg-gray-200">
           <tr>
             <th className="px-4 py-2">S.N</th>
@@ -41,25 +69,30 @@ function Allproductlist() {
               <td className="border px-4 py-2">{product.price}</td>
               <td className="border px-4 py-2">{product.bidAmount}</td>
               <td className="border px-4 py-2">
-                <img src={product.image} alt={product.title} className="w-8 h-8 rounded-full inline-block" />
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="w-8 h-8 rounded-full inline-block"
+                />
               </td>
-              <td className="border  py-2">
-              <button 
+              <td className="border py-2">
+                <button
                   className="bg-green-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-green-600"
+                  onClick={() => handlePreview(product.id)}
                 >
-                  View
+                  <FaEye className="mr-1" />
                 </button>
-                <button 
+                <button
                   className="bg-blue-500 text-white px-4 py-2 rounded-lg mr-2 hover:bg-blue-600"
-                  onClick={() => handleUpdate(product.id)} 
+                  onClick={() => handleUpdate(product.id)}
                 >
-                  Update
+                  <FaEdit className="mr-1" />
                 </button>
-                <button 
+                <button
                   className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
-                  onClick={() => handleDelete(product.id)} 
+                  onClick={() => handleDelete(product.id)}
                 >
-                  Delete
+                  <FaTrash className="mr-1" />
                 </button>
               </td>
             </tr>
@@ -67,6 +100,7 @@ function Allproductlist() {
         </tbody>
       </table>
     </div>
+
   );
 }
 
