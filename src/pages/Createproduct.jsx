@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 
 
 /**
- * A form component for creating a product.
- * Handles form submission by preventing default form behavior and
- * logging the form fields to the console.
+ * Renders a form for creating a new product with fields for category, name, price, auction end date, image, and description.
  *
- * @returns {JSX.Element} A JSX element representing the CreateProduct component.
+ * On submission, prevents the default form action and logs the entered product details to the console.
+ *
+ * @returns {JSX.Element} The CreateProduct form component.
  */
 function CreateProduct() {
   const [productName, setProductName] = useState('');

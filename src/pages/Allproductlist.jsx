@@ -3,9 +3,11 @@ import { FaEye, FaEdit, FaTrash } from 'react-icons/fa';
 
 
 /**
- * Displays a list of products in a table format.
- * Each row in the table represents a product, with columns for the product's ID, title, price, bid amount, image, and actions (preview, edit, delete).
- * Handles previewing, editing, and deleting products when the respective buttons are clicked.
+ * Renders a table of products with options to preview, edit, or delete each product.
+ *
+ * Displays a static list of products, each with a title, price, bid amount, and image. Provides action buttons for each product to preview, edit, or delete, triggering corresponding handlers. Includes a button to navigate to the product creation page.
+ *
+ * @returns {JSX.Element} The rendered product list component.
  */
 function Allproductlist() {
   const products = [
