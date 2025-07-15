@@ -3,9 +3,9 @@ import { FaEye, FaEdit, FaTrash } from 'react-icons/fa';
 
 
 /**
- * Displays a list of categories in a table format.
- * Each row in the table represents a category, with columns for the category's ID, user, title, date, and actions (preview, edit, delete).
- * Handles previewing, editing, and deleting categories when the respective buttons are clicked.
+ * Renders a table of categories with options to preview, edit, or delete each entry.
+ *
+ * Displays a static list of categories, each with user, title, and date information. Provides action buttons for each category to trigger preview, edit, or delete handlers.
  * @type {React.FC}
  */
 function Categories() {

@@ -1,9 +1,8 @@
 import React from 'react';
 
 /**
- * @function Dashboard
- * @description A page that displays some statistics about the current state of the application.
- * @returns {JSX.Element} A JSX element representing the Dashboard page.
+ * Renders a dashboard page displaying summary statistics for auctions, bids, users, and categories.
+ * @returns {JSX.Element} The dashboard page with four statistic cards using static example data.
  */
 
 function Dashboard() {
